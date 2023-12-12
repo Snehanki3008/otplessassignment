@@ -199,13 +199,13 @@
     <script type="text/javascript"> 
        
             function otpless(otplessUser) {
-                // console.log(JSON.stringify(otplessUser));
-                var username = otplessUser.waName;
+                 console.log(JSON.stringify(otplessUser));
+                    var username = otplessUser.waName;
                     var usernumber = otplessUser.waNumber;
                     // Signup/signin the user and redirect to next page
                     document.getElementById('otpless-login-page').style.display="none"
                     document.getElementById('otpless').innerHTML = `
-                    <h2> Hi ${username} Welcome ! </h2>`
+                    <h2> Hi ${username} : ${usernumber} Welcome ! </h2>`
                 }
         
         
